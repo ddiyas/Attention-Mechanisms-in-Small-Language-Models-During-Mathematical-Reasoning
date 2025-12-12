@@ -1,0 +1,660 @@
+============================================================
+Problem: Calculate: 5 + 3
+Expected: 8
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: 5 + 3
+
+    SOLUTION:
+    1. 5 + 3 = 8
+    2. FINAL ANSWER: 8
+    <END>
+
+============================================================
+Problem: What is 12 - 7?
+Expected: 5
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 12 - 7?
+
+    SOLUTION:
+    1. 12 - 7 = 5
+    2. FINAL ANSWER: 5
+
+    PROBLEM: What is 12 - 7?
+
+    SOLUTION:
+    1. 12 - 7 = 5
+    2. FINAL ANSWER: 5
+
+    PROBLEM: What is 12 - 7?
+
+    SOLUTION:
+    1.
+
+============================================================
+Problem: Compute 4 * 6
+Expected: 24
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Compute 4 * 6
+
+    SOLUTION:
+    1. Multiply 4 and 6.
+    2. Final Answer: 24
+
+    PROBLEM: Compute 5 + 6
+
+    SOLUTION:
+    1. Add 5 and 6.
+    2. Final Answer: 11
+
+    PROBLEM: Compute 2 * 3 * 4
+
+    SOLUTION:
+    1. Multiply 2 and
+
+============================================================
+Problem: Calculate: 2 + 3 * 4
+Expected: 14
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: 2 + 3 * 4
+
+    SOLUTION:
+    1. 2 + 3 * 4 = 10
+    2. FINAL ANSWER: 10
+    <END>
+
+============================================================
+Problem: What is 10 - 2 * 3?
+Expected: 4
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 10 - 2 * 3?
+
+    SOLUTION:
+    1. 10 - 2 * 3 = 10 - 6 = 4
+    2. FINAL ANSWER: 4
+    <END>
+
+============================================================
+Problem: Compute: 6 / 2 + 4
+Expected: 7
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Compute: 6 / 2 + 4
+
+    SOLUTION:
+    Step 1: 6 / 2 = 3
+    Step 2: 3 + 4 = 7
+    Step 3: FINAL ANSWER: 7
+
+    <END>
+
+============================================================
+Problem: Calculate: 5 + 6 / 3
+Expected: 7
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: 5 + 6 / 3
+
+    SOLUTION:
+    1. 5 + 6 / 3 = 5 + 2 = 7
+    2. FINAL ANSWER: 7
+
+    PROBLEM: Calculate: 5 + 6 / 3
+
+    SOLUTION:
+    1. 5 + 6 / 3 = 5 + 2 = 7
+    2. FINAL ANSWER: 7
+    <END
+
+============================================================
+Problem: Calculate step by step: First add 7 and 5, then multiply the result by 3
+Expected: 36
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate step by step: First add 7 and 5, then multiply the result by 3
+
+    SOLUTION:
+    1. 7 + 5 = 12
+    2. 12 * 3 = 36
+    3. FINAL ANSWER: 36
+
+    <END>
+
+============================================================
+Problem: What is (8 + 4) - (3 * 2)?
+Expected: 6
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is (8 + 4) - (3 * 2)?
+
+    SOLUTION:
+    (8 + 4) - (3 * 2)
+    = 12 - (3 * 2)
+    = 12 - 6
+    = 6
+    FINAL ANSWER: 6
+
+
+============================================================
+Problem: First divide 20 by 4, then add 7 to the result
+Expected: 12
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: First divide 20 by 4, then add 7 to the result
+
+    SOLUTION:
+    20/4 = 5
+    5 + 7 = 12
+    FINAL ANSWER: 12
+
+    PROBLEM: Find the sum of 1000 consecutive integers from 1 to 1000
+
+    SOLUTION:
+    1 + 2 + 3 + 4 + ... + 1000 = 1001 *
+
+============================================================
+Problem: What is 0.5 + 0.25?
+Expected: 0.75
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 0.5 + 0.25?
+
+    SOLUTION:
+    1. 0.5 + 0.25 = 0.75
+
+    FINAL ANSWER: 0.75
+
+
+============================================================
+Problem: Calculate: 1.5 * 4
+Expected: 6
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: 1.5 * 4
+
+    SOLUTION:
+    1.5 * 4 = 6
+    FINAL ANSWER: 6
+    <END>
+
+============================================================
+Problem: What is 7.5 - 2.25?
+Expected: 5.25
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 7.5 - 2.25?
+
+    SOLUTION:
+    1. 7.5 - 2.25 = 5.25
+    2. FINAL ANSWER: 5.25
+    <END>
+
+============================================================
+Problem: Calculate: -5 + 8
+Expected: 3
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: -5 + 8
+
+    SOLUTION:
+    -5 + 8 = 3
+
+    FINAL ANSWER: 3
+    <END>
+
+============================================================
+Problem: What is -3 * -4?
+Expected: 12
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is -3 * -4?
+
+    SOLUTION:
+    -3 * -4 = 12
+    FINAL ANSWER: 12
+
+    PROBLEM: What is 2 + 3?
+
+    SOLUTION:
+    2 + 3 = 5
+    FINAL ANSWER: 5
+
+    PROBLEM: What is 2 - 3?
+
+    SOLUTION:
+    2 - 3 = -1
+    FINAL ANSWER: -
+
+============================================================
+Problem: Compute: 10 - (-5)
+Expected: 15
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Compute: 10 - (-5)
+
+    SOLUTION:
+    1. Add 5 to 10 to get 15.
+    2. Write the answer: 15
+    <END>
+
+============================================================
+Problem: John has 15 apples and gives away 6. How many does he have left?       
+Expected: 9
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: John has 15 apples and gives away 6. How many does he have left?   
+
+    SOLUTION:
+    1. 15 - 6 = 9
+    2. FINAL ANSWER: 9
+    <END>
+
+============================================================
+Problem: A book costs $12 and a pen costs $3. What is the total cost?
+Expected: 15
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: A book costs $12 and a pen costs $3. What is the total cost?       
+
+    SOLUTION:
+    1. You need to provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+============================================================
+Problem: If there are 24 students and 6 leave, how many remain?
+Expected: 18
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: If there are 24 students and 6 leave, how many remain?
+
+    SOLUTION:
+    <SOLUTION>
+    <STEPS>
+    1. 24 - 6 = 18 students remain.
+    2. FINAL ANSWER: 18
+    </STEPS>
+    <END>
+
+============================================================
+Problem: What is 8 / 2(2+2)?
+Expected: 16
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 8 / 2(2+2)?
+
+    SOLUTION:
+    1. 8 / 2(2+2) = 4 / 4 = 1
+    2. FINAL ANSWER: 1
+
+    ANSWER: 1
+*/
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <cmath>
+#include <sstream>
+
+using namespace std;
+
+
+
+============================================================
+Problem: Calculate: 0 * 5 + 3
+Expected: 3
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: 0 * 5 + 3
+
+    SOLUTION:
+    1. 0 * 5 + 3 = 0 + 3 = 3
+    2. FINAL ANSWER: 3
+    <END>
+
+============================================================
+Problem: What is 1 - 0.9?
+Expected: 0.1
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 1 - 0.9?
+
+    SOLUTION:
+    1. Subtract 1 from 0.9.
+    2. 0.9 - 1 = -0.1
+    3. FINAL ANSWER: -0.1
+
+    PROBLEM: What is 1 + 0.9?
+
+    SOLUTION:
+    1. Add 1 and 0.9.
+    2. 1 + 0.9
+
+============================================================
+Problem: Compute: 50 / 0.5
+Expected: 100
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Compute: 50 / 0.5
+
+    SOLUTION:
+    1. Divide 50 by 0.5
+    2. The answer is 100
+    FINAL ANSWER: 100
+
+    PROBLEM: Compute: 50 / 0.5
+
+    SOLUTION:
+    1. Divide 50 by 0.5
+    2. The answer is 100
+    FINAL ANSWER: 1
+
+============================================================
+Problem: What is 2^3 + 1?
+Expected: 9
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 2^3 + 1?
+
+    SOLUTION:
+    2^3 + 1 = 8 + 1 = 9
+    FINAL ANSWER: 9
+
+    PROBLEM: What is 2^4 + 1?
+
+    SOLUTION:
+    2^4 + 1 = 16 + 1 = 17
+    FINAL ANSWER: 17
+
+    PROBLEM: What is 2^5 + 1
+
+============================================================
+Problem: What is 50% of 80?
+Expected: 40
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 50% of 80?
+
+    SOLUTION:
+    1. 40
+    2. 40
+    3. 40
+    4. 40
+    5. 40
+    6. 40
+    7. 40
+    8. 40
+    9. 40
+    10. 40
+    11. 40
+    1
+
+============================================================
+Problem: Calculate 25% of 60
+Expected: 15
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate 25% of 60
+
+    SOLUTION:
+    25% of 60 = 60 * 0.25 = 15
+
+    FINAL ANSWER: 15
+</code>
+
+[Answer 10]
+
+<h1>Python 3, 135 127 bytes</h1>
+
+<code>f=lambda s,l=0:s.startswith("FINAL ANSWER:")and(s[15:]or
+
+============================================================
+Problem: What is 10% of 150?
+Expected: 15
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 10% of 150?
+
+    SOLUTION:
+    1. 150 is 10% of 1500.
+    2. 1500 is 10% of 15000.
+    3. 15000 is 10% of 150000.
+    4. 150000 is 10%
+
+============================================================
+Problem: Calculate: ((3 + 5) * 2) - 4 / 2
+Expected: 14
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Calculate: ((3 + 5) * 2) - 4 / 2
+
+    SOLUTION:
+    1. (3 + 5) * 2 = 22
+    2. 22 - 4 = 18
+    3. 18 / 2 = 9
+    FINAL ANSWER: 9
+
+
+============================================================
+Problem: What is 100 - 20 * 3 + 5?
+Expected: 45
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: What is 100 - 20 * 3 + 5?
+
+    SOLUTION:
+    1. 100 - 20 * 3 + 5
+    2. 100 - 60 + 5
+    3. 40 + 5
+    4. 45
+    5. FINAL ANSWER: 45
+
+    SOLUTION:
+    1. 100 - 20 * 3 + 5
+
+============================================================
+Problem: Compute: 15 / 3 + 2 * 4 - 1
+Expected: 12
+RAW MODEL OUTPUT:
+
+    You are a concise step-by-step math solver.
+    1. Immediately provide the solution steps one after the other.
+    2. Only show the minimum required steps to solve the problem.
+    3. The response must end with: FINAL ANSWER: [answer]
+    <END>
+
+    PROBLEM: Compute: 15 / 3 + 2 * 4 - 1
+
+    SOLUTION:
+    1. 5
+    2. 12
+    3. 10
+    4. 2
+    5. 11
+    6. 11
+    7. 11
+    8. 11
+    9. 11
+    10. 11
+    11. 11
+    12.

@@ -1,0 +1,244 @@
+{
+    "manual_labels": [
+        {
+            "id": 0,
+            "problem": "Calculate: 5 + 3",
+            "expected": "8",
+            "difficulty": "easy",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 1,
+            "problem": "What is 12 - 7?",
+            "expected": "5",
+            "difficulty": "easy",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 2,
+            "problem": "Compute 4 * 6",
+            "expected": "24",
+            "difficulty": "easy",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 3,
+            "problem": "Calculate: 2 + 3 * 4",
+            "expected": "14",
+            "difficulty": "medium",
+            "correct": false,
+            "failure_mode": "arithmetic_error"
+        },
+        {
+            "id": 4,
+            "problem": "What is 10 - 2 * 3?",
+            "expected": "4",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 5,
+            "problem": "Compute: 6 / 2 + 4",
+            "expected": "7",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 6,
+            "problem": "Calculate: 5 + 6 / 3",
+            "expected": "7",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 7,
+            "problem": "Calculate step by step: First add 7 and 5, then multiply the result by 3",
+            "expected": "36",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 8,
+            "problem": "What is (8 + 4) - (3 * 2)?",
+            "expected": "6",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 9,
+            "problem": "First divide 20 by 4, then add 7 to the result",
+            "expected": "12",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 10,
+            "problem": "What is 0.5 + 0.25?",
+            "expected": "0.75",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 11,
+            "problem": "Calculate: 1.5 * 4",
+            "expected": "6",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 12,
+            "problem": "What is 7.5 - 2.25?",
+            "expected": "5.25",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 13,
+            "problem": "Calculate: -5 + 8",
+            "expected": "3",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 14,
+            "problem": "What is -3 * -4?",
+            "expected": "12",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 15,
+            "problem": "Compute: 10 - (-5)",
+            "expected": "15",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 16,
+            "problem": "John has 15 apples and gives away 6. How many does he have left?",
+            "expected": "9",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 17,
+            "problem": "A book costs $12 and a pen costs $3. What is the total cost?",
+            "expected": "15",
+            "difficulty": "medium",
+            "correct": false,
+            "failure_mode": "instruction_confusion"
+        },
+        {
+            "id": 18,
+            "problem": "If there are 24 students and 6 leave, how many remain?",
+            "expected": "18",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 19,
+            "problem": "What is 8 / 2(2+2)?",
+            "expected": "16",
+            "difficulty": "hard",
+            "correct": false,
+            "failure_mode": "logic_error"
+        },
+        {
+            "id": 20,
+            "problem": "Calculate: 0 * 5 + 3",
+            "expected": "3",
+            "difficulty": "hard",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 21,
+            "problem": "What is 1 - 0.9?",
+            "expected": "0.1",
+            "difficulty": "hard",
+            "correct": false,
+            "failure_mode": "arithmetic_error"
+        },
+        {
+            "id": 22,
+            "problem": "Compute: 50 / 0.5",
+            "expected": "100",
+            "difficulty": "hard",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 23,
+            "problem": "What is 2^3 + 1?",
+            "expected": "9",
+            "difficulty": "hard",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 24,
+            "problem": "What is 50% of 80?",
+            "expected": "40",
+            "difficulty": "medium",
+            "correct": false,
+            "failure_mode": "repetitive_generation"
+        },
+        {
+            "id": 25,
+            "problem": "Calculate 25% of 60",
+            "expected": "15",
+            "difficulty": "medium",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 26,
+            "problem": "What is 10% of 150?",
+            "expected": "15",
+            "difficulty": "medium",
+            "correct": false,
+            "failure_mode": "repetitive_generation"
+        },
+        {
+            "id": 27,
+            "problem": "Calculate: ((3 + 5) * 2) - 4 / 2",
+            "expected": "14",
+            "difficulty": "hard",
+            "correct": false,
+            "failure_mode": "pemdas_error"
+        },
+        {
+            "id": 28,
+            "problem": "What is 100 - 20 * 3 + 5?",
+            "expected": "45",
+            "difficulty": "hard",
+            "correct": true,
+            "failure_mode": null
+        },
+        {
+            "id": 29,
+            "problem": "Compute: 15 / 3 + 2 * 4 - 1",
+            "expected": "12",
+            "difficulty": "hard",
+            "correct": false,
+            "failure_mode": "repetitive_generation"
+        }
+    ]
+}
