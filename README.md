@@ -358,9 +358,7 @@ errors---suggest deficiencies in *execution* rather than *strategy*.
 ### Attention to Numerical Tokens
 
 As problem difficulty increased, the model allocated significantly more
-attention to numerical tokens
-(Figure [1](#fig:attn_numbers){reference-type="ref"
-reference="fig:attn_numbers"}):
+attention to numerical tokens (Figure 1)
 
 -   Easy: $\alpha_{\text{nums}} = 0.132 \pm 0.004$
 
@@ -374,7 +372,7 @@ $\alpha = 0.05$ due to small sample size (n=3 easy, n=8 hard), the trend
 suggests the model recognizes that harder problems require greater focus
 on operands.
 
-![](attention_to_numbers.png){#fig:attn_numbers width="75%"}
+![](./plots/attention_to_numbers.png)
 
 ### Attention to Operators
 
@@ -389,14 +387,12 @@ minimal across all difficulties:
 
 Even on hard problems requiring careful operator precedence, the model
 devoted less than 1% of attention to operators
-(Figure [2](#fig:attn_ops){reference-type="ref"
-reference="fig:attn_ops"}). This suggests the model does not explicitly
+(Figure 2). This suggests the model does not explicitly
 \"look at\" operators when deciding which operation to perform,
 contrasting to human problem-solving strategies where operators guide
 computational flow.
 
-![Outliers removed for
-clarity.](attention_to_operators.png){#fig:attn_ops width="75%"}
+![](./plots/attention_to_operators.png)
 
 ## Attention Entropy and Distribution
 
@@ -404,8 +400,7 @@ clarity.](attention_to_operators.png){#fig:attn_ops width="75%"}
 
 Contrary to expectations, attention entropy remained remarkably stable
 across problem difficulties
-(Figure [3](#fig:entropy_difficulty){reference-type="ref"
-reference="fig:entropy_difficulty"}):
+(Figure 3):
 
 -   Easy: $\bar{H} = 2.928 \pm 0.096$
 
@@ -419,16 +414,13 @@ maintains a consistent level of attention diffusion regardless of
 problem complexity. It does not modulate *how* broadly it attends, only
 *what* it attends to (numbers vs other tokens).
 
-![Attention entropy hovers around 2.9 for all
-categories.](entropy_by_difficulty.png){#fig:entropy_difficulty
-width="75%"}
+![](./plots/entropy_by_difficulty.png)
 
 ### Correct vs Incorrect Solutions
 
 Surprisingly, **incorrect solutions exhibited slightly higher entropy**
 than correct ones
-(Figure [4](#fig:entropy_correctness){reference-type="ref"
-reference="fig:entropy_correctness"}):
+(Figure 4):
 
 -   Correct: $\bar{H} = 2.852 \pm 0.138$
 
@@ -440,8 +432,7 @@ incorrect solutions ($\sigma = 0.244$ vs $0.138$) further supports this
 interpretation. Failed reasoning seems to involve inconsistent
 information retrieval.
 
-![](correct_vs_incorrect_entropy.png){#fig:entropy_correctness
-width="75%"}
+![](./plots/correct_vs_incorrect_entropy.png)
 
 The Gini coefficient tells a complementary story:
 
@@ -465,8 +456,7 @@ reveal when and where attention shifts during generation.
 **Problem:** "Compute: 6 / 2 + 4" (Expected: 7) ✓
 
 The model correctly performs division first (6/2=3), then addition
-(3+4=7). Figure [5](#fig:traj_correct){reference-type="ref"
-reference="fig:traj_correct"} reveals the attention strategy:
+(3+4=7). (Figure 5) reveals the attention strategy:
 
 -   **Recent context dominates**: Attention to recently generated tokens
     (green) consistently exceeds 0.3, spiking to 0.55 when writing step
@@ -478,7 +468,7 @@ reference="fig:traj_correct"} reveals the attention strategy:
 -   **Operators ignored**: Orange line flat at $<0.01$ throughout---even
     when deciding which operation to perform
 
-![](trajectory_case_5.png){#fig:traj_correct width="95%"}
+![](./plots/trajectory_case_5.png)
 
 **Key insight:** The model relies heavily on recently generated tokens
 (previous step results) rather than attending back to the original
@@ -492,8 +482,7 @@ The model makes two errors: (1) computes $(3+5) \times 2 = 22$ instead
 of 16, (2) performs $22-4$ before dividing by 2, violating order of
 operations.
 
-Figure [6](#fig:traj_pemdas){reference-type="ref"
-reference="fig:traj_pemdas"} shows where attention diverges:
+(Figure 6) shows where attention diverges:
 
 -   **Step 8 - brief operator attention**: Orange spikes to 0.25 when
     processing the nested expression---the *only* moment operators are
@@ -507,7 +496,7 @@ reference="fig:traj_pemdas"} shows where attention diverges:
     problem statement to verify; model treats its own outputs as ground
     truth
 
-![](trajectory_case_27.png){#fig:traj_pemdas width="95%"}
+![](./plots/trajectory_case_27.png)
 
 **Key insight:** Small models seem to lack self-correction mechanisms.
 Attention propagates errors forward rather than re-evaluating
@@ -521,8 +510,7 @@ This deliberately ambiguous notation tests whether the model interprets
 as $(8/2) \times 4 = 16$ or $8/(2 \times 4) = 1$. The model chooses the
 latter (incorrect) interpretation.
 
-Figure [7](#fig:traj_logic){reference-type="ref"
-reference="fig:traj_logic"} reveals decision-making under uncertainty:
+(Figure 7) reveals decision-making under uncertainty:
 
 -   **Steps 0-15 - parsing confusion**: Attention to operators (orange)
     unusually high, spiking to 0.27---the model recognizes ambiguity
@@ -534,7 +522,7 @@ reference="fig:traj_logic"} reveals decision-making under uncertainty:
     model generates \"FINAL ANSWER: 1\" with no indication of
     uncertainty
 
-![](trajectory_case_19.png){#fig:traj_logic width="95%"}
+![](./plots/trajectory_case_19.png)
 
 **Key insight:** This small model can detect structural ambiguity but
 lacks robust disambiguation strategies. Once it commits to an
